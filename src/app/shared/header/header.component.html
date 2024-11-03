@@ -1,0 +1,60 @@
+<header class="header-area p-relative">
+    <div class="top-header top-header-style-four">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 col-md-8">
+            <ul class="top-header-contact-info">
+              <li>
+                Call:
+                <a href="https://wa.me/962795136777" target="_blank">+962795136777</a>
+              </li>
+            </ul>
+            <div class="top-header-social">
+              <span>Follow us:</span>
+              <a href="https://2u.pw/vtsDzHkM" target="_blank"><i class="bx bxl-facebook"></i></a>
+              <a href="https://2u.pw/1iTK4mNW" target="_blank"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://www.instagram.com/rumsandsacademy/" target="_blank"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <ul class="top-header-login-register">
+              <li>
+                <a routerLink="/auth/login"><i class="bx bx-log-in"></i> Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="navbar-area navbar-style-three" style="background-color: white;">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" routerLink="/">
+            <img src="../../../assets/img/logo.JPG" alt="logo" width="180" height="180" />
+          </a>
+          <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+            <span class="burger-menu">
+              <span class="top-bar"></span>
+              <span class="middle-bar"></span>
+              <span class="bottom-bar"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" [ngClass]="{ 'show': isMenuOpen }">
+            <ul class="navbar-nav" style="height: auto;">
+              <li class="nav-item">
+                <a routerLink="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/contact" class="nav-link" routerLinkActive="active">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/about-us" class="nav-link">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
