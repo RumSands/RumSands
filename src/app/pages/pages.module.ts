@@ -6,7 +6,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutHomeComponent } from './about-home/about-home.component';
 import { WhyUsComponent } from './why-us/why-us.component';
 import { HomePageMainBannerComponent } from './home-page/home-page-main-banner/home-page-main-banner.component';
-import { HomePageProgramsComponent } from './home-page/home-page-programs/home-page-programs.component';
 import { SharedModule } from '../shared/shared.module';
 
 
@@ -16,7 +15,6 @@ import { SharedModule } from '../shared/shared.module';
     AboutHomeComponent,
     WhyUsComponent,
     HomePageMainBannerComponent,
-    HomePageProgramsComponent
   ],
   imports: [
     CommonModule,
