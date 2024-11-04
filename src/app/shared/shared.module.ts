@@ -6,26 +6,34 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CountUpModule } from 'ngx-countup';
 import { FooterComponent } from './footer/footer.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HomePageCategoriesComponent } from './home-page-categories/home-page-categories.component';
 
 
 @NgModule({
   declarations: [
     FunfactsComponent,
    FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomePageCategoriesComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    CountUpModule
+    CountUpModule,
+    CarouselModule,
+    
+
   ],
   exports:[
     FormsModule,
     FunfactsComponent,
     FooterComponent,
     CountUpModule,
-    HeaderComponent
+    HeaderComponent,
+    CarouselModule,
+    RouterModule,
+    HomePageCategoriesComponent
   ],
 
 })
