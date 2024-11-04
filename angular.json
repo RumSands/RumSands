@@ -34,7 +34,9 @@
               "src/assets/assets/css/styles.min.css",
               "node_modules/ngx-lightbox/lightbox.css",
               "node_modules/ngx-spinner/animations/ball-scale-multiple.css" ,
-              "node_modules/ngx-spinner/animations/square-jelly-box.css" 
+              "node_modules/ngx-spinner/animations/square-jelly-box.css" ,
+              "src/assets/css/boxicons.min.css"
+
             ],
             "scripts": [
               "src/assets/assets/libs/jquery/dist/jquery.min.js",

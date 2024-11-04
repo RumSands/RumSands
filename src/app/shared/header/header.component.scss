@@ -239,9 +239,116 @@
         }
     }
 }
+.top-header-btn {
+    text-align: end;
 
+    .default-btn {
+        background-color: var(--whiteColor);
+        color: var(--mainColor);
+        border-color: var(--whiteColor);
+        
+        .icon-arrow {
+            color: var(--mainColor);
+            transition: var(--transition);
+        }
+        &:hover, &:focus {
+            background-color: var(--blackColor);
+            color: var(--whiteColor);
+            border-color: var(--blackColor);
+        
+            .icon-arrow {
+                color: var(--whiteColor);
+            }
+        }
+    }
+}
+.top-header-style-two {
+    background-color: var(--whiteColor);
+    padding: {
+        top: 15px;
+        bottom: 15px;
+    };
+    .top-header-contact-info {
+        text-align: end;
 
+        li {
+            color: var(--paragraphColor);
+            text-align: start;
+    
+            i {
+                color: var(--mainColor);
+            }
+            a {
+                color: var(--blackColor);
+                
+                &:hover, &:focus {
+                    color: var(--mainColor);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.top-header-style-three {
+    background-color: #1D1D1D;
+    padding: {
+        top: 0;
+        bottom: 0;
+    };
+    .top-header-contact-info {
+        display: inline-block;
+        padding: {
+            top: 10px;
+            bottom: 10px;
+        };
+        li {
+            padding-left: 0;
+            font-size: 14px;
+            color: #cccccc;
 
+            a {
+                font-size: 14px;
+                color: #cccccc;
+                font-weight: 500;
+
+                &:hover, &:focus {
+                    color: var(--mainColor);
+                }
+            }
+        }
+    }
+}
+.top-header-login-register {
+    text-align: end;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+
+    li {
+        display: inline-block;
+        color: #cccccc;
+        margin-right: 25px;
+
+        a {
+            display: inline-block;
+            color: #cccccc;
+            position: relative;
+            padding-left: 20px;
+            
+            i {
+                position: absolute;
+                left: 0;
+                top: 3px;
+            }
+            &:hover, &:focus {
+                color: var(--mainColor);
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
 .top-header-social {
     display: inline-block;
     margin-left: 23px;
