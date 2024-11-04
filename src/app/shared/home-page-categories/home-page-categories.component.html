@@ -8,7 +8,80 @@
     
     <div
   class="single-categories-courses-item mb-30 category-item"
-  [style.backgroundImage]="'url(../../../../assets/img/' + category.categoryimg + ')'"
+  [style.backgroundImage]="'url(../../../assets/img/' + category.categoryimg + ')'"
+  style="height: 250px; position: relative;">
+        <div class="dark-overlay"></div>
+
+        <div class="icon">
+          <i class="bx bx-layer"></i>
+        </div>
+
+        <h3 class="clear">{{ category.categoryname }}</h3>
+        <a
+          [routerLink]="['/categorycourses/', category.categoryid]"
+          style="cursor: pointer"
+          class="learn-more-btn clear"
+          >All Courses<i class="bx bx-book-reader"></i
+        ></a>
+        <a
+          [routerLink]="['/categorycourses/', category.categoryid]"
+          style="cursor: pointer"
+          class="link-btn clear"
+        ></a>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>
+
+
+
+<div class="courses-categories-slides">
+  
+  <owl-carousel-o [options]="categoriesSlides">
+    <ng-template
+      carouselSlide
+      *ngFor="let category of categories"
+    >
+    
+    <div
+  class="single-categories-courses-item mb-30 category-item"
+  [style.backgroundImage]="'url(../../assets/img/' + category.categoryimg + ')'"
+  style="height: 250px; position: relative;">
+        <div class="dark-overlay"></div>
+
+        <div class="icon">
+          <i class="bx bx-layer"></i>
+        </div>
+
+        <h3 class="clear">{{ category.categoryname }}</h3>
+        <a
+          [routerLink]="['/categorycourses/', category.categoryid]"
+          style="cursor: pointer"
+          class="learn-more-btn clear"
+          >All Courses<i class="bx bx-book-reader"></i
+        ></a>
+        <a
+          [routerLink]="['/categorycourses/', category.categoryid]"
+          style="cursor: pointer"
+          class="link-btn clear"
+        ></a>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</div>
+
+
+<div class="courses-categories-slides">
+  
+  <owl-carousel-o [options]="categoriesSlides">
+    <ng-template
+      carouselSlide
+      *ngFor="let category of categories"
+    >
+    
+    <div
+  class="single-categories-courses-item mb-30 category-item"
+  [style.backgroundImage]="'url(assets/img/' + category.categoryimg + ')'"
   style="height: 250px; position: relative;">
         <div class="dark-overlay"></div>
 
