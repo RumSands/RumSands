@@ -7,6 +7,7 @@ import { AboutHomeComponent } from './about-home/about-home.component';
 import { WhyUsComponent } from './why-us/why-us.component';
 import { HomePageMainBannerComponent } from './home-page/home-page-main-banner/home-page-main-banner.component';
 import { SharedModule } from '../shared/shared.module';
+import { NewCoursesComponent } from './new-courses/new-courses.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { SharedModule } from '../shared/shared.module';
     AboutHomeComponent,
     WhyUsComponent,
     HomePageMainBannerComponent,
+    NewCoursesComponent
   ],
   imports: [
     CommonModule,
