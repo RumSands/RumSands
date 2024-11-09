@@ -9,6 +9,7 @@ import { HomePageMainBannerComponent } from './home-page/home-page-main-banner/h
 import { SharedModule } from '../shared/shared.module';
 import { NewCoursesComponent } from './new-courses/new-courses.component';
 import { AllCoursesComponent } from './all-courses/all-courses.component';
+import { SharedService } from '../service/shared.service';
 
 
 @NgModule({
@@ -24,6 +25,9 @@ import { AllCoursesComponent } from './all-courses/all-courses.component';
     CommonModule,
     PagesRoutingModule,
     SharedModule
+  ],
+  providers: [
+    SharedService
   ]
 })
 export class PagesModule { }

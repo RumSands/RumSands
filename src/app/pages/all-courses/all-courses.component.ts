@@ -11,7 +11,7 @@ import { SharedService } from 'src/app/service/shared.service';
 })
 export class AllCoursesComponent {
   constructor(private route: ActivatedRoute,public _sharedService: SharedService, 
-    public dialog: MatDialog,private router: Router , private viewportScroller: ViewportScroller
+   private router: Router , private viewportScroller: ViewportScroller
     ) { }
 
   
