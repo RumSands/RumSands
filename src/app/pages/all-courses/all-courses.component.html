@@ -1,0 +1,99 @@
+<app-header></app-header>
+
+<!-- <div class="page-title-area page-title-style-three" style="background: url('../../../assets/Images/NewNew.JPG')  ; width: 100% ; height: 200px; background-size: cover; "></div> -->
+    <!-- <div class="container">
+        <div class="page-title-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Programs</li>
+            </ul>
+        </div>
+    </div> -->
+    <div class="courses-area" style="padding: 25px 35px 25px 35px">
+        <div class="container">
+            <div class="courses-topbar">
+                <div class="row" style="align-items: end; text-align: right;">
+                    <div class="col-lg-8 col-md-8 ms-auto">
+                        <div class="topbar-ordering-and-search">
+                            <div class="row" style="align-items: end;">
+                                <div class=" col-xl-6 col-lg-7 col-md-12 ms-auto">
+                                    <div class="topbar-search" style="position: relative; display: inline-block;">
+                                        <form (ngSubmit)="Search()">
+                                            <label><i class="bx bx-search"></i></label>
+                                            <input type="text" class="input-search" style="padding-right: 170px;" name="searchText" [(ngModel)]="searchText" placeholder="Search here...">
+                                            <button type="submit" style="position: absolute; top: 0; right: 0; background: #2b2259; border: none; border-radius: 20px; height: 100%;" class="btn btn-primary">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xxl-3 col-xl-4  col-md-6 " *ngFor="let program of allcourses">
+                    <a [routerLink]="['/coursedetails/' , program.courseid]" > 
+                        <div class="single-courses-box mb-30" style="display: flex; flex-direction: column; height: 510px; border-radius: 10px; width:100%; overflow: hidden;">
+                            <div class="courses-image" style="width: 100%;  height:200px; overflow: hidden;">
+                                <a [routerLink]="['/coursedetails/' , program.courseid]" class="d-block">
+                                    <img src="../../../assets/Image/{{program.courseimg}}" style="width: 100%; height:200px; object-fit:cover;" alt="image">
+                                </a>
+                                <div class="courses-tag">
+                                    <a [routerLink]="['/coursedetails/' , program.courseid]">{{program.categoryName}}</a>
+                                </div>
+                            </div>
+                            <div class="courses-meta" style="text-align: center;">
+                                <p style="font-weight: bold;font-size: 15px;">
+                                    <a [routerLink]="['/coursedetails/' , program.courseid]" class="d-inline-block">{{program.coursename}}</a>
+                                </p>
+                           
+                            </div>
+                        
+                            <hr>
+                            <div class="courses-content" style="padding: 10px 25px 20px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; line-height: 1.4;">
+                                <p class="description" style="margin: 0; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">
+                                    <ng-container *ngFor="let line of program.descriptioncourse.split('\n')">
+                                        <span *ngIf="line.trim().startsWith('-')" class="bold">{{ line.slice(1).trim() }}</span>
+                                        <span *ngIf="!line.trim().startsWith('-')" >{{ line }}</span><br />
+                                      </ng-container>
+                                </p>
+                            </div>
+                            <div style="margin-top: auto; text-align: right; padding-right: 27px;padding-bottom: 25px">
+                                <a [routerLink]="['/coursedetails/' , program.courseid]" class="read-more-btn" style="color:black;">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+          
+                    </a>
+          
+                    <!-- <div class="single-blog-post mb-30" style="display: flex; flex-direction: column; height: 510px; border-radius: 30px; width:100%; overflow: hidden;">
+                        <div class="post-image">
+                            <a [routerLink]="['/coursedetails/' , course.courseid]" class="d-block" style="width: 100%;  height:200px; overflow: hidden;">
+                                <img src="../../../assets/Image/{{course.courseimg}}"style="width: 100%; height:200px; object-fit:cover;" alt="image">
+                            </a>
+                            <div class="tag">
+                                <a [routerLink]="['/coursedetails/' , course.courseid]">{{course.category.categoryname}}</a>
+                            </div>
+                        </div>
+                        <div class="courses-meta" style="text-align: center;">
+                            <p style="font-weight: bold;font-size: 15px;">
+                                <a [routerLink]="['/coursedetails/' , course.courseid]" class="d-inline-block">{{course.coursename}}</a>
+                            </p>
+                       
+                        </div>
+                    
+                        <hr>
+                        <div class="courses-content" style="padding: 0px 25px 20px; overflow: auto;">
+                            <p>{{ course.descriptioncourse | slice:0:250 }}{{ course.descriptioncourse.length > 250 ? '...' : '' }}</p>
+                        </div>
+                      
+                      
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <app-footer></app-footer>
