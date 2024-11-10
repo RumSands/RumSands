@@ -10,6 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { NewCoursesComponent } from './new-courses/new-courses.component';
 import { AllCoursesComponent } from './all-courses/all-courses.component';
 import { SharedService } from '../service/shared.service';
+import { ContactUSComponent } from './contact-us/contact-us.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SharedService } from '../service/shared.service';
     WhyUsComponent,
     HomePageMainBannerComponent,
     NewCoursesComponent ,
-    AllCoursesComponent
+    AllCoursesComponent,
+    ContactUSComponent
   ],
   imports: [
     CommonModule,
