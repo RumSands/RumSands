@@ -11,6 +11,8 @@ import { NewCoursesComponent } from './new-courses/new-courses.component';
 import { AllCoursesComponent } from './all-courses/all-courses.component';
 import { SharedService } from '../service/shared.service';
 import { ContactUSComponent } from './contact-us/contact-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { CategoryCoursesComponent } from './category-courses/category-courses.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ContactUSComponent } from './contact-us/contact-us.component';
     HomePageMainBannerComponent,
     NewCoursesComponent ,
     AllCoursesComponent,
-    ContactUSComponent
+    ContactUSComponent ,
+    AboutUsComponent ,
+    CategoryCoursesComponent
   ],
   imports: [
     CommonModule,
