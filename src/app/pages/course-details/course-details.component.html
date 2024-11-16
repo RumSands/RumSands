@@ -1,0 +1,84 @@
+<app-header></app-header>
+
+<div class="courses-details-area" style="padding-top: 40px; padding-bottom: 20px;">
+    <div class="container">
+        <div class="courses-details-header">
+            <div class="row align-items-center">
+              <div class="col-xl-11" style="margin: auto;">
+                    <div class="courses-title">
+                        <h2>{{detailscourse.coursename }}</h2>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="row p-0 m-0 col-xl-11" style="margin: auto !important;" >
+            <div class="col-xl-8">
+              <div class="courses-details-image text-center">
+                  <img src="assets/img/{{detailscourse.courseimg}}" alt="image" />
+              </div>
+          </div>
+
+          <div class="col-xl-4 d-none d-xl-block">
+            <span class="chapter mb-3" style="font-size: large; margin: 0px;">Related Courses</span>
+            <ul class="list-group exercise-list">
+                <li *ngFor="let x of randomcourses">
+                    <a [routerLink]="['/coursedetails/', x.courseid]" class="list-group-item d-flex align-items-center">
+                        <img src="assets/img/{{x.courseimg}}" alt="Abdominal Exercise" class="exercise-thumb me-3">
+                        <div>
+                            <div class="exercise-name">{{x.coursename}}</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+          
+        
+          </div>
+         
+            <div class="col-xl-11" style="margin: auto;margin-top: 3%;">
+              <div class="courses-sidebar-syllabus">
+                <span class="chapter mb-3" style="font-size: large;">{{detailscourse.coursename }}</span>
+                <h4 class="description">
+                    <ng-container *ngFor="let line of detailscourse.descriptioncourse.split('\n')">
+                      <span *ngIf="line.trim().startsWith('-')" class="bold">{{ line.slice(1).trim() }}</span>
+                      <span *ngIf="!line.trim().startsWith('-')" >{{ line }}</span><br />
+                    </ng-container>
+                </h4>
+            </div>
+            
+            </div>
+        </div>
+
+
+   
+
+   <div class="row">  
+        <div class="row p-0 m-0 col-lg-12 d-block d-xl-none" style="margin: auto !important;margin-top: 2%;padding: 0px;">
+          <span class="chapter mb-3" style="font-size: large; margin: 0px;">Related Courses</span>
+          <ul style="display: inline-block;">
+            <div class="list-group exercise-list" style="display: inline-block;width:100% ;">
+              <li *ngFor="let x of randomcourses" class="col-lg-6 col-12" style="display: inline-block;">
+                <a [routerLink]="['/coursedetails/', x.courseid]" class="list-group-item d-flex align-items-center">
+                    <img src="assets/img/{{x.courseimg}}" alt="Abdominal Exercise" class="exercise-thumb me-3">
+                    <div>
+                        <div class="exercise-name">{{x.coursename}}</div>
+                    </div>
+                </a>
+            </li>
+            </div>
+         
+          </ul>
+      </div>
+    </div>  
+      
+    </div>
+
+
+
+</div>
+
+<app-footer></app-footer>
+

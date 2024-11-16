@@ -13,6 +13,7 @@ import { SharedService } from '../service/shared.service';
 import { ContactUSComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CategoryCoursesComponent } from './category-courses/category-courses.component';
+import { CourseDetailsComponent } from './course-details/course-details.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CategoryCoursesComponent } from './category-courses/category-courses.co
     AllCoursesComponent,
     ContactUSComponent ,
     AboutUsComponent ,
-    CategoryCoursesComponent
+    CategoryCoursesComponent,
+    CourseDetailsComponent
   ],
   imports: [
     CommonModule,
