@@ -23,14 +23,14 @@ export class SharedService {
 Designed for enthusiasts of all skill levels, this course will equip you with the knowledge and practical skills needed to excel in both photography and videography.
   
         - What You Will Learn:
-        • Fundamentals of Photography: Understand camera settings, composition, lighting, and the principles of taking stunning photographs.
-        • Videography Techniques: Learn how to capture high-quality video, including camera movement, framing, and storytelling through video.
-        • Post-Production Skills: Gain proficiency in editing photos and videos using industry-standard software to enhance your final products.
-        • Creative Projects: Engage in hands-on projects that challenge your skills and encourage innovative thinking.
-        • Portfolio Development: Build a personal portfolio showcasing your best work, preparing you for future opportunities in photography and videography.
+      • Fundamentals of Photography: Understand camera settings, composition, lighting, and the principles of taking stunning photographs.
+      • Videography Techniques: Learn how to capture high-quality video, including camera movement, framing, and storytelling through video.
+      • Post-Production Skills: Gain proficiency in editing photos and videos using industry-standard software to enhance your final products.
+      • Creative Projects: Engage in hands-on projects that challenge your skills and encourage innovative thinking.
+      • Portfolio Development: Build a personal portfolio showcasing your best work, preparing you for future opportunities in photography and videography.
   
         - Why Choose This Course?
-        Our experienced instructors provide personalized guidance in a collaborative environment, ensuring that you develop your unique style while mastering technical skills. Whether you aspire to be a professional photographer or simply want to capture life's moments beautifully, this course will set you on the right path.
+      Our experienced instructors provide personalized guidance in a collaborative environment, ensuring that you develop your unique style while mastering technical skills. Whether you aspire to be a professional photographer or simply want to capture life's moments beautifully, this course will set you on the right path.
   
         Enroll now and start your journey into the world of photography and videography with Rum Sands Academy!
         
